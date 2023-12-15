@@ -1,0 +1,30 @@
+name: projectx
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^8.0.2
+  firebase_core:
+  firebase_auth:
+  equatable:
+  flutter_bloc:
+  google_sign_in:
+  email_validator:
+  cloud_firestore:
+  font_awesome_flutter:
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
