@@ -1,38 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:projectx/data/repositories/auth_repository.dart';
-
+import 'package:projectx/ui/signup/signup_screen.dart';
 import 'bloc/bloc/auth_bloc.dart';
 
-/* void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return RepositoryProvider(
-      create: (context)=>AuthRepository(),
-      child: BlocProvider(
-        create: (context)=>AuthBloc(
-          authRepository: RepositoryProvider.of<AuthRepository>(context)
-        ),
-        child: MaterialApp(
-          title: 'Test Application',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
-          home: Container()
-        ),
-      ),
-    );
-  }
-}
- */
-
-class SignUpScreen extends StatelessWidget {
+/* class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +13,9 @@ class SignUpScreen extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: BlocProvider.of(context).
+          ),
           onPressed: () {
             // Assuming you have access to the AuthBloc through BlocProvider
             BlocProvider.of<AuthBloc>(context).add(
@@ -52,7 +27,7 @@ class SignUpScreen extends StatelessWidget {
       ),
     );
   }
-}
+} */
 
 void main() {
   runApp(const MainApp());
@@ -74,7 +49,8 @@ class MainApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: SignUpScreen(), // Display the SignUpScreen as the initial screen
+          home:
+              SignUpScreen(), // Display the SignUpScreen as the initial screen
         ),
       ),
     );
